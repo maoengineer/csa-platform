@@ -25,7 +25,7 @@ async function getAdminStats() {
     postsToday: postsToday || 0,
     pendingReports: pendingReports || 0,
     pendingResets: pendingResets || 0,
-    recentActivity: recentActivity || [],
+    recentActivity: (recentActivity as any) || [],
   };
 }
 
